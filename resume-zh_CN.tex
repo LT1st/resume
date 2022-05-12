@@ -1,0 +1,124 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{hyperref}
+\hypersetup{hidelinks,
+	colorlinks=true,
+	allcolors=black,
+	pdfstartview=Fit,
+	breaklinks=true}
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{卢韬}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{188-0403-0926}{1417274896@qq.com}{计算机视觉方向}{GitHub \href{https://github.com/LT1st}{@lt1st}}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{个人介绍}
+本人乐观向上，工作负责、自我驱动力强、热爱尝试新事物、抗压能力强、身体素质好。
+在校期间长期从事计算机视觉相关研究，对图像处理、深度学习有较深理解。
+熟悉图像分类、目标检测、语义分割等视觉领域常见Baseline，有快速复现论文的能力。
+阅读西瓜书、统计学习方法、数据挖掘等多部数理统计书籍，对算法数学原理有一定了解。
+
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{东北大学},信息科学与工程学院，自动化专业,\textit{本科在读}}{2019.9 - 2023.6}
+%\ \textbf{排名150/260(前60\%)}
+
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言}: Python, C(STM32) , C++, Matlab, R, Verilog, JAVA (Tomcat,Servelet), HTML
+  \item \textbf{IT技能}: Git, Shell , Linux, Markdown, LaTex, MySQL, 良好的代码风格
+  \item \textbf{英语能力}: CET-6(528), 学术英语写作(97), 英语翻译(95), 大学英语(90)
+  \item \textbf{计算机视觉}: OpenCV(C++,Python), Pytorch , PIL , PCL(点云) 
+  \item \textbf{关键词}: ReID , Object detection(Small Obstacl) , Instance Segmentation , Measurement
+\end{itemize}
+
+% \end{itemize}
+
+\section{科研经历}
+\datedsubsection{\textbf{海康威视研究院 | Hikvision Research Institute}, 视觉算法工程师}{2021.12 - 2022.03}
+\begin{itemize}
+  \item 分析现有算法在自动驾驶障碍物检测中的缺陷，利用可视化找出低矮、凹陷、细薄悬空等难样本。通过阅读\textbf{六十余篇}论文进行文献综述，针对难样本形成4套可靠的检测方案，输出研究报告2份。   
+  \item 参与会议讨论，共同制定障碍物检测方案，并根据讨论\textbf{从零完成论文复现}（\href{https://github.com/LT1st/SmallObstacleDetection}{Small Obstacl Detection}）。
+\end{itemize}
+
+\datedsubsection{\textbf{智能工业数据解析与优化教育部重点实验室 | DAO},优化算法工程师}{2021.06 - 至今}
+\begin{itemize}
+  \item 应用\textbf{智能优化算法}到晶胞参数优化中。基于matlab和c++实现遗传、差分进化、粒子群优化算法。
+  \item 差分进化算法优化BP神经网络初始权重和超参数，使收敛epoch\textbf{从200降到14}，效果显著。
+  \item 利用遗传算法、粒子群优化算法求解指派问题、TSP问题，同时针对性优化算法各个环节。
+\end{itemize}
+
+
+\datedsubsection{\textbf{创新机器人实验室 | Action},视觉算法工程师}{2020.05 - 2020.12}
+\begin{itemize}
+  \item 负责机器人感知，与控制、机械设计确定感知策略、数据传输协议、数据结构等。
+  \item 完成单片机与电脑的通讯方案，在stm32和linux环境自定义了蓝牙、串口、CAN传输方案。 
+  \item 使用realsense相机，用OpenCV、CUDA和PCL在边缘设备TX2进行定位、姿态感知、物体识别。
+\end{itemize}
+
+% \begin{onehalfspacing}
+% \end{onehalfspacing}
+
+\section{项目经历}
+\datedsubsection{\textbf{第十四批大创项目 | 基于c++的射影定理可视化平台},预备成员}{2020.08 - 2022.03}
+\begin{itemize}
+  \item 根据理论推导结果，使用轻量化的easyx库(c++)实现射影定理算法可视化开发。
+\end{itemize}
+\datedsubsection{\textbf{第十五批大创项目 | 基于视觉重识别的远距离静默考勤系统},核心成员}{2019.09 - 2020.08}
+\begin{itemize}
+  \item 调研已有Reid算法，根据论文读懂对应开源代码，做详细注释，为后续改进工作打下基础。
+  \item 搭建实验平台，实现了基于Pytorch的Reid和online learning算法。 
+  \item 项目获评省级大创项目、我最喜爱的项目，结题表现为良好。
+\end{itemize}
+
+
+\section{竞赛获奖}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item 目标检测比赛（Starfish Detection）, 铜牌（193/2026），2021
+  \\ \qquad 使用：YOLOX，YOLOV5，YOLOR，FasterRCNN，时序交叉模型融合，手写NMS 等
+  \item 美国数学建模竞赛，三等奖 ， 2021，2022
+  \\ \qquad 使用：决策树（CRT、XGBOOST），LSTM，DQL等
+\end{itemize}
+
+% \section{\faHeartO\ 项目/作品摘要}
+% \section{项目/作品摘要}
+% \datedline{\textit{An Integrated Version of Security Monitor Vis System}, https://hijiangtao.github.io/ss-vis-component/ }{}
+% \datedline{\textit{Dark-Tech}, https://github.com/hijiangtao/dark-tech/ }{}
+% \datedline{\textit{融合社交网络数据挖掘的电视节目可视化分析系统}, https://hijiangtao.github.io/variety-show-hot-spot-vis/}{}
+% \datedline{\textit{LeetCodeOJ Solutions}, https://github.com/hijiangtao/LeetCodeOJ}{}
+% \datedline{\textit{Info-Vis}, https://github.com/ISCAS-VIS/infovis-ucas}{}
+
+
+% \section{\faInfo\ 社会实践/其他}
+\section{社区参与/实践其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item 乐于参与开源社区讨论,为多个项目提issue，修改BUG。\href{https://blog.csdn.net/prinTao?type=blog}{技术博客阅读量\textbf{3.1W}}。
+  \item 校党委宣传部记者，学院团委宣传部记者，校科协实习副部长，长跑队、游泳队成员。
+  \item CCC2020优秀志愿者，ICPC2021优秀志愿者，忻州市统计局计算站实习生，总社会服务时间\textbf{200h+}
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
